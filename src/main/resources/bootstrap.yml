@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ibi-ptd-parking
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: nacos.ptdplat.com:80
+      config:
+        namespace: c4287cfc-a41f-4734-b99f-84227c433eef
+        file-extension: yaml
+      discovery:
+        namespace: c4287cfc-a41f-4734-b99f-84227c433eef
