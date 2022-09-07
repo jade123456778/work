@@ -1,4 +1,4 @@
-package com.ibi.enrollment;
+package com.ibi.parking;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
