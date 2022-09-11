@@ -8,6 +8,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
 @Schema(description = "接收保存和编辑收费规则表的参数")
@@ -23,8 +24,11 @@ public class E_ChargingRules extends E_BaseVo<E_ChargingRules, ChargingRules> {
   
   @Schema(description = "免费时长")  
   @NotNull(message = "免费时长 不能为空")
-  private Integer freeDuration;  
-  
+  private Integer freeDuration;
+
+  @Schema(description = "收费时间段信息")
+  @NotNull(message = "时间段信息不可为空")
+  private List<E_ChargingRulesItem> chargingRulesItems;
   
 
   /**

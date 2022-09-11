@@ -1,8 +1,10 @@
 package com.ibi.parking.entity;
 
 import com.itool.db.bean.BaseEntity;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Table;
 
 import javax.persistence.Column;
@@ -19,6 +21,8 @@ import javax.persistence.Entity;
 @Setter
 @Entity
 @javax.persistence.Table(name = "charging_rules")
+@Data
+@ToString(callSuper = true)
 @Table(appliesTo = "charging_rules", comment = "收费规则表")
 public class ChargingRules extends BaseEntity {
             
@@ -27,6 +31,9 @@ public class ChargingRules extends BaseEntity {
                 
     @Column(name = "free_duration", columnDefinition = "int(11) comment &#39;免费时长&#39;")
     private Integer freeDuration;
+
+    @Column(name = "delete_flag", columnDefinition = "int(2) comment '删除标志'")
+    private Integer deleteFlag = 0;
             
     
 }

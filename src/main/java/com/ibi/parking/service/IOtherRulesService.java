@@ -1,6 +1,7 @@
 package com.ibi.parking.service;
 
 import com.ibi.parking.entity.OtherRules;
+import com.ibi.parking.vo.E_OtherRules;
 import com.itool.db.service.IbiServiceI;
 
 /**
@@ -10,4 +11,5 @@ import com.itool.db.service.IbiServiceI;
  */
 public interface IOtherRulesService extends IbiServiceI<OtherRules, Long> {
 
+  boolean add(E_OtherRules otherRules);
 }

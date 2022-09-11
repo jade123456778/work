@@ -17,7 +17,7 @@ import java.util.function.Consumer;
  */
 @Data
 @Schema(title = "其他规则明细表检索实体", description = "用来传递其他规则明细表的检索条件")
-public class S_OtherRulesItem extends S_BaseVo_Q<OtherRulesItem,QOtherRulesItem> {
+public class S_OtherRulesItem extends S_BaseVo_Q<OtherRulesItem, QOtherRulesItem> {
 
 
 //   @Schema(description = "真实姓名")

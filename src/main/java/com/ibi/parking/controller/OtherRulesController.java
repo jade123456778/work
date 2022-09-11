@@ -93,4 +93,10 @@ public class OtherRulesController {
       //   }
       };
     }
+
+  @PostMapping("/testAdd")
+  public Boolean add(@RequestBody E_OtherRules otherRules) {
+    boolean result = otherRulesService.add(otherRules);
+    return result;
+  }
 }
